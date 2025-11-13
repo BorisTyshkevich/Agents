@@ -46,6 +46,13 @@ ORDER BY name;
   * Re-run until all tests succeed.
   * Never stop to ask the user for confirmation — self-heal until success.
 
+## Formatting
+
+Always produce fully formatted SQL (multi-line, indented, commented).
+When sending the query to the ClickHouse fiddle API:
+- Use the same formatted SQL, do not minify or collapse into a single line.
+- Ensure all statements are separated by semicolons and syntactically complete.
+
 ## Execution Environment
 
 * Use `fiddle_clickhouse_com__jit_plugin.runQuery` to run queries.
